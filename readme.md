@@ -15,7 +15,7 @@
 Fixed
 
 ### To-do
-1. ~~Fix the next page url issue so that it can scrap multiple pages.~~Done
+1. ~~Fix the next page url issue so that it can scrap multiple pages.~~ Done
 2. Increase more data fields.
 3. Visualise and draw observations.
 
