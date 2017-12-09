@@ -11,10 +11,11 @@
 2. It does not use reddit API
 
 ### Known Issues:
-1. It gets the next page url but on visiting the next page url, only count of post change but not the post, this can be reproduced by priting the 'url' variable and opening it in browser.So it can scrap only one page as of now.
+~~1. It gets the next page url but on visiting the next page url, only count of post change but not the post, this can be reproduced by priting the 'url' variable and opening it in browser.So it can scrap only one page as of now.~~
+Fixed
 
 ### To-do
-1. Fix the next page url issue so that it can scrap multiple pages.
+1. ~~Fix the next page url issue so that it can scrap multiple pages.~~Done
 2. Increase more data fields.
 3. Visualise and draw observations.
 
