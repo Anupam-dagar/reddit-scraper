@@ -14,11 +14,8 @@ while pages > 0:
     myurl = myurlopener.open(request)
     myurldata = myurl.read()
     soup = BeautifulSoup(myurldata, 'lxml')
-    for choice in soup.find_all('a', class_='choice'):
-        if choice.get('href').startswith('https://www.reddit.com/r/'):
-            csvfile.writerow([choice.text, choice.get('href')])
-        else:
-            pass
+    for choice in soup.find_all('div', class_='top-matter'):
+        csvfile.writerow([choice.p.a.text.encode('utf-8'), choice.p.a.get('href').encode('utf-8')])
     nextUrl = soup.find_all('span', class_='next-button')
     for nurl in nextUrl:
         url = nurl.a.get('href')
